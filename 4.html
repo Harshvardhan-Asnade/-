@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Collage - Happy Birthday Harshita!</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #ff69b4;
+            --secondary-color: #4a90e2;
+            --paper-bg: #fefefe;
+            --frame-color: #f8f4e1;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ffeef8, #fff5f8);
+        }
+
+        /* Background with paper texture */
+        .paper-background {
+            background: url("https://www.psdgraphics.com/wp-content/uploads/2022/01/white-math-paper-texture.jpg") repeat;
+            padding: 30px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Responsive grid for photo frames */
+        .collage-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            /* Adjusted for large images */
+            grid-auto-rows: auto;
+            gap: 20px;
+            max-width: 1200px;
+            width: 100%;
+            margin: auto;
+        }
+
+        /* Photo frame that resizes with images */
+        .photo-frame {
+            background: #fff;
+            padding: 12px;
+            border: 12px solid;
+            border-image: url('https://www.psdgraphics.com/wp-content/uploads/2022/01/white-math-paper-texture.jpg') 30 round;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Ensure large images fit properly */
+        .photo-frame img {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            /* Set a reasonable max-height */
+            object-fit: contain;
+            /* Ensures full image visibility */
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .collage-container {
+                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            }
+
+            .photo-frame img {
+                max-height: 300px;
+                /* Smaller max-height for mobile */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .collage-container {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+
+            .photo-frame img {
+                max-height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="paper-background">
+        <div class="collage-container">
+            <div class="photo-frame"><img src="img/1.jpg" alt="Photo 1"></div>
+            <div class="photo-frame"><img src="img/2.jpg" alt="Photo 2"></div>
+            <div class="photo-frame"><img src="img/3.jpg" alt="Photo 3"></div>
+            <div class="photo-frame"><img src="img/4.jpg" alt="Photo 4"></div>
+            <div class="photo-frame"><img src="img/5.jpg" alt="Photo 5"></div>
+            <div class="photo-frame"><img src="img/6.jpg" alt="Photo 6"></div>
+            <div class="photo-frame"><img src="img/7.jpg" alt="Photo 7"></div>
+            <div class="photo-frame"><img src="img/8.jpg" alt="Photo 8"></div>
+            <div class="photo-frame"><img src="img/9.jpg" alt="Photo 9"></div>
+            <div class="photo-frame"><img src="img/10.jpg" alt="Photo 10"></div>
+            <div class="photo-frame"><img src="img/11.jpg" alt="Photo 11"></div>
+            <div class="photo-frame"><img src="img/12.jpg" alt="Photo 12"></div>
+            <div class="photo-frame"><img src="img/13.jpg" alt="Photo 13"></div>
+            <div class="photo-frame"><img src="img/14.jpg" alt="Photo 14"></div>
+            <div class="photo-frame"><img src="img/15.jpg" alt="Photo 15"></div>
+            <div class="photo-frame"><img src="img/16.jpg" alt="Photo 16"></div>
+            <div class="photo-frame"><img src="img/17.jpg" alt="Photo 17"></div>
+            <div class="photo-frame"><img src="img/18.jpg" alt="Photo 18"></div>
+            <div class="photo-frame"><img src="img/19.jpg" alt="Photo 19"></div>
+            <div class="photo-frame"><img src="img/20.jpg" alt="Photo 20"></div>
+        </div>
+    </div>
+    <style>
+        .center-container {
+            display: flex;
+            justify-content: center;
+            /* Centers horizontally */
+            align-items: center;
+            /* Centers vertically */
+            height: 1vh;
+            /* Full viewport height */
+        }
+
+        .pink-button {
+            background-color: #ff69b4;
+            /* Hot Pink */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        /* Hover Effect */
+        .pink-button:hover {
+            background-color: #800447;
+            /* Deeper Pink */
+        }
+    </style><br><br>
+    <div class="center-container">
+       <a href="5.html"><button class="pink-button">Next</button></a>
+    </div>
+    <br>
+    <br>
+
+</body>
+
+</html>
